@@ -1,9 +1,6 @@
 import json
 
 
-json_data = open("test.json")
-
-
 def json_decorate(json_source):
     def decorator(init):
         def wrapper(self, *args):
@@ -14,18 +11,3 @@ def json_decorate(json_source):
             init(self, *args)
         return wrapper
     return decorator
-
-
-def test():
-    q = JsonTest()
-    print q.first_name
-    print q.last_name
-    print q.pin
-    return q
-
-
-class JsonTest(object):
-
-    @json_decorate(json_data)
-    def __init__(self):
-        pass
