@@ -1,0 +1,6 @@
+{
+    "first_name": "Steve",
+    "last_name": "Smith",
+    "pin": [1,2,3],
+    "test_dict": {"lol": 0, "teehee": 1}
+}
